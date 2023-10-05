@@ -1,9 +1,9 @@
 import Produto from '../components/Produto'
-import { useGetProdsQuery } from '../service/api'
+import { useGetProdsQuery } from '../services/api'
 
 import * as S from './styles'
 
-const ProdutosComponent = () => {
+const Produtos = () => {
   const { data: itens, isLoading } = useGetProdsQuery()
 
   if (isLoading) return <h2>Carregando...</h2>
@@ -19,4 +19,4 @@ const ProdutosComponent = () => {
   )
 }
 
-export default ProdutosComponent
+export default Produtos
