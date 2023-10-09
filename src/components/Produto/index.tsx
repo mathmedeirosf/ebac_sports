@@ -24,11 +24,6 @@ const ProdutoComponent = ({ produto }: Props) => {
         <img src={produto.imagem} alt={produto.nome} />
       </S.Capa>
       <S.Titulo>{produto.nome}</S.Titulo>
-      <S.Plataformas>
-        {produto.plataformas.map((plat) => (
-          <li key={plat}>{plat}</li>
-        ))}
-      </S.Plataformas>
       <S.Prices>
         <strong>{paraReal(produto.preco)}</strong>
       </S.Prices>
